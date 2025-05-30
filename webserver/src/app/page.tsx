@@ -44,7 +44,7 @@ export default function Home() {
             {images[current].caption}
           </div>
           {/* Carousel controls below image */}
-          <div className="flex flex-row items-center justify-between w-full mt-2 mb-2 px-2 py-10">
+          <div className="flex flex-row justify-center w-full mt-2 mb-2 px-2 py-10">
             <button
               onClick={prev}
               className="bg-yellow-700 text-white pirate-font px-6 py-2 rounded-lg border-2 border-yellow-900 hover:bg-yellow-800 transition font-bold"
