@@ -43,13 +43,6 @@ const CONTRACT_ABI: InterfaceAbi = [
   {
     inputs: [],
     name: "generateChart",
-    outputs: [{ internalType: "bytes", name: "png", type: "bytes" }],
-    stateMutability: "nonpayable",
-    type: "function",
-  },
-  {
-    inputs: [],
-    name: "generateChart",
     outputs: [{ internalType: "bytes", name: "", type: "bytes" }],
     stateMutability: "view",
     type: "function",
@@ -125,7 +118,9 @@ export default function Home() {
         CONTRACT_ABI,
         wallet
       );
+      console.log("calling precompile")
       const pngBytes = await contract.generateChart();
+      console.log(pngBytes)
       let actualPng;
       if (typeof pngBytes === "string" && pngBytes.startsWith("0x")) {
         // Remove '0x' and convert hex to Uint8Array
