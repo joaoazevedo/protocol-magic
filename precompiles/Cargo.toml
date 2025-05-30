@@ -1,0 +1,17 @@
+[package]
+name = "protocol-magic"
+description = "REVM compatible precompiles used in the presentation 'Protocol Magic: Extending the EVM with Precompiles' @ 4th Decentralized Meetup by Common Prefix"
+version = "1.0.0"
+edition = "2024"
+license = "MIT"
+authors = ["Joao Azevedo <joao@commonprefix.com>"]
+keywords = ["revm", "evm", "ethereum", "blockchain", "no_std", "precompile"]
+repository = "https://github.com/joaoazevedo/protocol-magic"
+
+[dependencies]
+alloy-sol-types = "^0.8.15"
+hex = "0.4.3"
+image = "0.25.6"
+plotters = "0.3.7"
+revm = "19.4.0"
+sha3 = "0.10.8"
